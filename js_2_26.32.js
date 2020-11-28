@@ -17,8 +17,20 @@ import subtract from "./math_functions.js";
 subtract(7,4);
 
 #Create a JavaScript Promise
+const makeServerRequest = new Promise((resolve, reject) => {
+});
 
 #Complete a Promise with resolve and reject
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer represents a response from a server
+  let responseFromServer;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
 
 #Handle a Fulfilled Promise with then
 
